@@ -1,16 +1,38 @@
-# React + Vite
+Top Memory Card
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Um jogo de memória desenvolvido com React (Vite) utilizando personagens da Rick and Morty API.
+O objetivo é simples: clicar em cada personagem apenas uma vez. Se o usuário clicar no mesmo card duas vezes, a pontuação atual é reiniciada e apenas o Top Score é mantido.
 
-Currently, two official plugins are available:
+Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Carregamento dinâmico dos personagens por ID via Rick and Morty API
 
-## React Compiler
+Cards interativos com suporte a teclado (Enter/Space)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Placar exibindo pontuação atual e maior pontuação atingida
 
-## Expanding the ESLint configuration
+Embaralhamento dos cards a cada jogada
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Interface responsiva com grade adaptável
+
+Como executar o projeto 1. Instalar dependências
+npm install
+
+    2. Iniciar o servidor de desenvolvimento
+    npm run dev
+
+Após isso, basta abrir o endereço exibido pelo Vite (geralmente http://localhost:5173).
+
+Arquitetura do projeto
+
+index.html — ponto de entrada da aplicação
+
+src/main.jsx — inicialização do React
+
+src/App.jsx — componente raiz da aplicação
+
+src/components/CardContainer.jsx — lógica de pontuação, embaralhamento e renderização dos cards
+
+src/components/Card.jsx — card individual, responsável por buscar e exibir dados do personagem
+
+src/styles/ — arquivos CSS (App.css, CardContainer.css, Card.css)
