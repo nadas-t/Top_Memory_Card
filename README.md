@@ -1,41 +1,47 @@
-# Top Memory Card
+#Top Memory Card
 
-Um jogo de memória desenvolvido com React (Vite) utilizando personagens da Rick and Morty API.
-O objetivo é simples: clicar em cada personagem apenas uma vez. Se o usuário clicar no mesmo card duas vezes, a pontuação atual é reiniciada e apenas o Top Score é mantido.
+A memory game built with React (Vite) using characters from the Rick and Morty API.
+The objective is simple: click each character only once. If the user clicks the same card twice, the current score resets, while the Top Score is preserved.
+![Project preview](src/assets/bg.jpg)
 
-![Preview do projeto](src/assets/bg.jpg)
+[View hosted preview](https://top-memory-card-gs0du9n84-thiago-nadims-projects.vercel.app)
 
-[Ver preview hospedado](https://top-memory-card-gs0du9n84-thiago-nadims-projects.vercel.app)
+##🚀 Features
 
-## Funcionalidades
+Dynamic character loading by ID via the Rick and Morty API
 
-- Carregamento dinâmico dos personagens por ID via Rick and Morty API
-- Cards interativos com suporte a teclado (Enter/Space)
-- Placar exibindo pontuação atual e maior pontuação atingida
-- Embaralhamento dos cards a cada jogada
-- Interface responsiva com grade adaptável
+Interactive cards with keyboard support (Enter/Space)
 
-## Como executar o projeto
+Scoreboard showing current score and highest score
 
-1. Instalar dependências
+Cards are shuffled after every move
 
-```bash
+Responsive layout with an adaptive grid
+
+##🛠️ How to Run the Project
+
+Install dependencies:
+
 npm install
-```
 
-2. Iniciar o servidor de desenvolvimento
 
-```bash
+Start the development server:
+
 npm run dev
-```
 
-Após isso, basta abrir o endereço exibido pelo Vite (geralmente `http://localhost:5173`).
 
-## Arquitetura do projeto
+After that, open the address displayed by Vite (usually http://localhost:5173).
 
-- `index.html` — ponto de entrada da aplicação
-- `src/main.jsx` — inicialização do React
-- `src/App.jsx` — componente raiz da aplicação
-- `src/components/CardContainer.jsx` — lógica de pontuação, embaralhamento e renderização dos cards
-- `src/components/Card.jsx` — card individual, responsável por buscar e exibir dados do personagem
-- `src/styles/` — arquivos CSS (`App.css`, `CardContainer.css`, `Card.css`)
+##🧱 Project Architecture
+
+index.html — entry point of the application
+
+src/main.jsx — React initialization
+
+src/App.jsx — root component
+
+src/components/CardContainer.jsx — scoring logic, shuffling, and card rendering
+
+src/components/Card.jsx — individual card component responsible for fetching and displaying character data
+
+src/styles/ — CSS files (App.css, CardContainer.css, Card.css)
